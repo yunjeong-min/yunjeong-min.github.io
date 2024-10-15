@@ -9,4 +9,14 @@ body {
 }
 .wrap img{
     width:100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0;
 }
+
+#HCB_comment_box .submit {
+    background:none; /* Clear twitter bootstrap style. */
+    background-color:#7665AB;
+    /*border:1px solid darkgreen;*/
+    color: white;
+  }
