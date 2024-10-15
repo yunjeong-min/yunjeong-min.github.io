@@ -2,15 +2,11 @@ body {
     background-color: #E9C9DF;
 }
 
-#cen_img {
-    display:block;
-    margin:auto;
-    width:600px
-}
-
-.gst_bx{
-    text-align: center;
-}
-.gst_hd{
+.wrap{
+    width: 100%;
+    margin: 0 auto;
     max-width: 600px;
+}
+.wrap img{
+    width:100%;
 }
