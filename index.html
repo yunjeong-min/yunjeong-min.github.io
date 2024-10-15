@@ -9,6 +9,13 @@
         .home-desc {
             opacity: 0;
         }
+        #HCB_comment_box .submit {
+            background:none; /* Clear twitter bootstrap style. */
+            background-color:#7665AB;
+            /*border:1px solid darkgreen;*/
+            color: white;
+        }
+
         #HCB_comment_box {
             max-width: 500px;
             margin: auto;
@@ -20,12 +27,7 @@
             display: none;
          }
          
-        #HCB_comment_box .btn {
-            background:none; /* Clear twitter bootstrap style. */
-            background-color:#7665AB;
-            /*border:1px solid darkgreen;*/
-            color: white;
-        }
+        
     </style>
     <title>Guestbook</title>
 </head>
@@ -34,7 +36,7 @@
     <script> hcb_user = {
         comments_header : 'Guestbook',
         submit : 'Submit',
-        msg_thankyou:'Thank you for leaving comments in THENCE Guestbook!!',
+        msg_thankyou:'Thank you!!',
         content_label: 'Enter your comments here',
     };</script>
     <div class ="wrap">
