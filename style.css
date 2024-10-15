@@ -2,6 +2,9 @@ body {
     background-color: #E9C9DF;
 }
 
+.gst_bx{
+    text-align: center;
+}
 .gst_hd{
     max-width: 600px;
     position: relative;
