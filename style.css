@@ -2,6 +2,12 @@ body {
     background-color: #E9C9DF;
 }
 
+#cen_img {
+    display:block;
+    margin:auto;
+    width:600px
+}
+
 .gst_bx{
     text-align: center;
 }
