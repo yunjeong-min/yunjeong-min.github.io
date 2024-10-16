@@ -2,6 +2,20 @@ body {
     background-color: #E9C9DF;
 }
 
+.main_wrap{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+.main_wrap img{
+    width:100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0;
+}
+
+
+
 .wrap{
     width: 100%;
     margin: 0 auto;
