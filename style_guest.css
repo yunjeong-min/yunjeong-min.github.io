@@ -1,13 +1,15 @@
 body{
     margin:0;
-    background-color: blue;
+    background-color: #E9C9DF;
 }
-.main_wrap{
+
+
+.wrap{
     width: 100%;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
 }
-.main_wrap img{
+.wrap img{
     width:100%;
     border: 0px;
     padding: 0px;
