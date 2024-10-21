@@ -10,7 +10,7 @@ body{
 }
 .main_wrap{
     max-width: 80%;
-    margin: auto 0;
+    margin: auto;
 }
 .main_wrap img{
     display: block;
