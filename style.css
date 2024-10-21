@@ -13,10 +13,16 @@ body{
     max-width: 80%;
     margin: auto;
 }
-.main_wrap img{
+.main_wrap_img{
     display: block;
     width:100%;
     max-width: 800px;
     height: auto;
     margin: auto;
+}
+
+.icon_img_1{
+    display: block;
+    top: 10%;
+    left: 10%;
 }
