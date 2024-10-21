@@ -23,6 +23,7 @@ body{
 
 .icon_img_1{
     display: block;
+    position: relative;
     top: 10%;
     left: 10%;
 }
