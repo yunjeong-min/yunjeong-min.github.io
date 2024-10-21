@@ -3,9 +3,7 @@ body{
     background-color: blue;
 }
 .main_wrap{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto 0;
     max-width: 800px;
 }
 .main_wrap img{
