@@ -3,9 +3,11 @@ body{
 }
 
 .box{
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .main_wrap{
     max-width: 80%;
