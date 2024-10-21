@@ -2,13 +2,20 @@ body{
     margin:0;
     background-color: blue;
 }
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .main_wrap{
+    max-width: 80%;
     margin: auto 0;
-    max-width: 800px;
 }
 .main_wrap img{
+    display: block;
     width:100%;
-    border: 0px;
-    padding: 0px;
-    margin: 0;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
 }
