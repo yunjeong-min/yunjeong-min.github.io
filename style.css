@@ -1,30 +1,138 @@
 body{
+    margin:0;
     background-color: blue;
+    font-family: "bookmania", serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
 }
 
-.box{
-    height: 100vh;
+.container{
     display: flex;
-    align-items: center;
     justify-content: center;
-    
-}
-.main_wrap{
-    max-width: 80%;
-    margin: auto;
-}
-.main_wrap_img{
-    display: block;
-    width:100%;
-    max-width: 800px;
-    height: auto;
-    margin: auto;
-    
+    align-items: center;
+    height: 100vh;
 }
 
-.icon_img_1{
-    display: block;
+.container_2{
     position: relative;
-    top: 10%;
-    left: 10%;
+    width: 100%; /* 반응형 너비 */
+    max-width: 1000px; /* 최대 너비 */
+    height: auto; /* 자동 높이 */
+}
+
+.background_img{    
+    width:100%;
+    height: auto;
+}
+
+.icon_1 {
+    position: absolute;
+    top: 11%; /* 아이콘 위치 조정 */
+    left: 7%;
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+.icon_2 {
+    position: absolute;
+    top: 38%; /* 아이콘 위치 조정 */
+    left: 7%;
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+
+.icon_3 {
+    position: absolute;
+    top: 67%; /* 아이콘 위치 조정 */
+    left: 7%;
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+.icon_4 {
+    position: absolute;
+    top: 11%; /* 아이콘 위치 조정 */
+    right: 7%;
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+    transform: translate(0,0%);
+}
+.icon_5 {
+    position: absolute;
+    top: 38%; /* 아이콘 위치 조정 */
+    right: 7%;
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+.icon_6 {
+    position: absolute;
+    top: 67%; /* 아이콘 위치 조정 */
+    right: 7%;
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+#text_1 {
+    font-size: 2.2vw;
+    position: absolute;
+    top:19%; /* 아이콘 위치 조정 */
+    left: 4%;
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+
+#text_2 {
+    font-size: 2.2vw;
+    position: absolute;
+    top:19%; /* 아이콘 위치 조정 */
+    right: 6%;
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+a{
+    color:#1D2087;
+}
+@media screen and (min-width: 1000px) {
+    #text_1, #text_2{
+       font-size: 22px;
+    }
+  }
+
+  .icon_7 {
+    position: absolute;
+    top: 64.5%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 200px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+  .icon_8 {
+    position: absolute;
+    top: 80%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 200px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
 }

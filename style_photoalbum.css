@@ -1,0 +1,80 @@
+body{
+    margin:0;
+    background-color: blue;
+    font-family: "bookmania", serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container_2{
+    width:100%;
+    max-width:1000px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+.gallery{margin:40px ;box-sizing:border-box;}
+.gallery:after{content:"";display:block;clear:both;visibility: hidden;}
+.gallery li{width:20%;float:left;box-sizing:border-box;padding:0 20px;margin:0 0 50px 0;}
+.gallery li img{width:100%;height:auto;}
+
+@media (max-width:1200px){
+    .container .gallery li{width:25%;}
+}
+@media (max-width:768px){
+    .container .gallery li{width:33.33333%;}
+}
+@media (max-width:560px){
+    .container .gallery li{width:50%;}
+}
+@media (max-width:480px){
+    .container .gallery li{width:100%;}
+}
+
+.row {
+    cursor: pointer;
+    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 100px; /* 최대 너비 설정 */
+    height: auto;
+  }
+
+
+
+
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+
+  #lightbox {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.694);
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    display: none;
+  }
+
+  #lightboxImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #eee;
+  }

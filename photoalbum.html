@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/twn1gzz.css">
+    <link rel="stylesheet" href="style_photoalbum.css"/>
+    <title>Photo Album</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container_2">
+      <div class="gallery">
+        <ul>
+          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+        </ul>
+      </div>
+    </div>
+
+      <div id="lightbox">
+        <img src="src/test_icon.png" alt="" id="lightboxImage">
+      </div>
+   
+  </div>
+  
+  
+      <script>
+        console.time('test');
+    
+        var pics = document.getElementsByClassName("pic");
+        var lightbox = document.getElementById("lightbox");
+        var lightboxImage = document.getElementById("lightboxImage");
+    
+    
+        for (i = 0; i < pics.length; i++) {
+          pics[i].addEventListener("click", showLightbox);
+        }
+    
+        function showLightbox() {
+          var bigLocation = this.getAttribute("data-src");
+          lightboxImage.setAttribute("src", bigLocation);
+          lightbox.style.display = "block";
+        }
+    
+        lightbox.onclick = function () {
+          lightbox.style.display = "none";
+        }
+    
+        console.timeEnd('test');
+      </script>
+</body>
+   
+        
+</html>
