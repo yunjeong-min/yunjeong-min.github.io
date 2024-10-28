@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="https://use.typekit.net/twn1gzz.css">
+    <link rel="stylesheet" href="style_background.css"/>
+    <title>Wallpaper</title>
+
+    <style>
+       @media( orientation: portrait ){
+        html {
+          -ms-transform: rotate(-90deg); 
+                -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        transform-origin: top left;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vh;
+        height: 100vw;
+        }
+        }
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container_2">
+      <div id="header">
+        <h1>Wallpaper</h1>
+      </div>
+
+    <p>₊☆·₊˚౨ৎ˚₊☆·₊Decorate Your PC with TC₊☆·₊˚౨ৎ˚₊☆·₊</br> 
+    <a href="index.html" title="Return to Home">Back to Home</a></p>
+
+
+      <div class="gallery">
+        <ul>
+          <ul id="image-list"></ul>
+        </ul>
+      </div>
+
+      <p>ⒸTHENCE CO.,LTD. ALL RIGHTS RESERVED.</p> 
+    </div>
+
+    <div id="lightbox">
+      <img src="src/test_icon.png" alt="" id="lightboxImage">
+    </div>
+  </div>
+  
+  
+      <script>
+        const images = [
+            "src/wallpaper/important Document.jpg", // 이미지 경로를 여기에 추가하세요.
+            "src/wallpaper/not a virus.jpg", 
+            "src/wallpaper/teddy rainbow.jpg"
+        ];
+
+        const imageList = document.getElementById('image-list');
+
+        images.forEach(image => {
+            const li = document.createElement('li');
+            const img = document.createElement('img');
+            img.src = image;
+            img.setAttribute('data-src', image); // data-src 속성 추가
+            img.classList.add('pic'); // 클래스 추가
+
+            li.appendChild(img); // <img>를 <li>에 추가
+            imageList.appendChild(li); // <li>를 <ul>에 추가
+        });
+
+      </script>
+</body>
+   
+        
+</html>

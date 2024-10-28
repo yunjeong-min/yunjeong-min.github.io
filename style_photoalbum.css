@@ -1,30 +1,67 @@
+@font-face {
+    font-family: 'grease';
+    src: url("src/font/grease__.ttf") format('truetype');
+}
+
 body{
     margin:0;
-    background-color: blue;
-    font-family: "bookmania", serif;
-    font-weight: 600;
-    font-style: italic;
+    margin-bottom: 10px;
     text-align: center;
+    line-height: 100%;
+    background-size: 20%;
+    background-image: url("src/album_bg.png");
+    background-repeat : repeat;
 }
+
+@media (max-width:1000px){
+    body{background-size:50%;}
+}
+
+div#header h1 {
+	background-color: transparent;
+	color: #1D2087;
+    cursor: default;
+    font-family: "rafaella-shadow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 96px;
+    margin-bottom : 60px;
+}
+
+@media (max-width:800px){
+    div#header h1{font-size: 12vw; 
+        margin-bottom : 2.5vh;}
+}
+
+a {
+    color: black;
+}
+
+p{
+    line-height: 120%;
+    margin: auto 0;
+}
+
+
 
 .container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    
 }
 
 .container_2{
+    position: relative;
     width:100%;
     max-width:1000px;
     margin:0 auto;
     overflow:hidden;
 }
 
-.gallery{margin:40px ;box-sizing:border-box;}
+.gallery{margin:40px; margin-bottom: 0px;box-sizing:border-box; }
 .gallery:after{content:"";display:block;clear:both;visibility: hidden;}
 .gallery li{width:20%;float:left;box-sizing:border-box;padding:0 20px;margin:0 0 50px 0;}
-.gallery li img{width:100%;height:auto;}
+.gallery li img{width:100%;height:auto; cursor: zoom-in;}
 
 @media (max-width:1200px){
     .container .gallery li{width:25%;}
@@ -38,16 +75,6 @@ body{
 @media (max-width:480px){
     .container .gallery li{width:100%;}
 }
-
-.row {
-    cursor: pointer;
-    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
-    max-width: 100px; /* 최대 너비 설정 */
-    height: auto;
-  }
-
-
-
 
 
 
@@ -65,16 +92,19 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.694);
-    top: 0%;
-    left: 0%;
-    position: fixed;
+    position: fixed; /* 변경: absolute에서 fixed로 */
     display: none;
+    cursor: zoom-out;
+    top: 0; /* 추가: 화면의 상단부터 시작 */
+    left: 0; /* 추가: 화면의 좌측부터 시작 */
   }
 
   #lightboxImage {
     position: absolute;
+    max-width: 90%; /* 추가: 이미지의 최대 크기 설정 */
+    max-height: 90%; /* 추가: 이미지의 최대 높이 설정 */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* 중앙 정렬 유지 */
     border: 3px solid #eee;
   }

@@ -3,35 +3,102 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
     <link rel="stylesheet" href="https://use.typekit.net/twn1gzz.css">
     <link rel="stylesheet" href="style_photoalbum.css"/>
     <title>Photo Album</title>
+
+    <style>
+       @media( orientation: portrait ){
+        html {
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vh;
+        height: 100vw;
+        }
+        }
+    </style>
 </head>
 
 <body>
   <div class="container">
     <div class="container_2">
+      <div id="header">
+        <h1>Photo Album</h1>
+      </div>
+
+    <p>⊹₊｡ꕤ˚₊⊹Our Webby Nook Moment⊹₊｡ꕤ˚₊⊹</br> 
+    <a href="index.html" title="Return to Home">Back to Home</a></p>
+
+
       <div class="gallery">
         <ul>
-          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
-          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
-          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
-          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
-          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
-          <li><img src="src/test_icon.png" data-src="src/test_icon.png" class="pic"></li>
+          <ul id="image-list"></ul>
         </ul>
       </div>
+
+      <p>ⒸTHENCE CO.,LTD. ALL RIGHTS RESERVED.</p> 
     </div>
 
-      <div id="lightbox">
-        <img src="src/test_icon.png" alt="" id="lightboxImage">
-      </div>
-   
+    <div id="lightbox">
+      <img src="src/test_icon.png" alt="" id="lightboxImage">
+    </div>
   </div>
   
   
       <script>
+        const images = [
+            "src/album/DSCN0011.JPG", // 이미지 경로를 여기에 추가하세요.
+            "src/album/DSCN0018.JPG", 
+            "src/album/DSCN0020.JPG", 
+            "src/album/DSCN0025.JPG", 
+            "src/album/DSCN0162.JPG", 
+            "src/album/DSCN0164.JPG", 
+            "src/album/DSCN0166.JPG", 
+            "src/album/DSCN0176.JPG", 
+            "src/album/DSCN0178.JPG", 
+            "src/album/SDC10795.JPG", 
+            "src/album/SDC10796.JPG", 
+            "src/album/SDC10815.JPG", 
+            "src/album/SDC10819.JPG", 
+            "src/album/SDC10820.JPG", 
+            "src/album/SDC10823.JPG", 
+            "src/album/SDC10824.JPG", 
+            "src/album/SDC10831.JPG", 
+            "src/album/SDC10853.JPG", 
+            "src/album/SDC10855.JPG", 
+            "src/album/SDC10858.JPG", 
+            "src/album/SDC10859.JPG", 
+            "src/album/SDC10864.JPG", 
+            "src/album/SDC10873.JPG", 
+            "src/album/SDC10876.JPG", 
+            "src/album/SDC10881.JPG", 
+            "src/album/SDC10883.JPG", 
+            "src/album/SDC10892.JPG", 
+            "src/album/SDC10895.JPG", 
+            "src/album/SDC10904.JPG", 
+            "src/album/SDC10906.JPG", 
+            "src/album/SDC10907.JPG", 
+            "src/album/SDC10914.JPG", 
+            "src/album/SDC10917.JPG"
+        ];
+
+        const imageList = document.getElementById('image-list');
+
+        images.forEach(image => {
+            const li = document.createElement('li');
+            const img = document.createElement('img');
+            img.src = image;
+            img.setAttribute('data-src', image); // data-src 속성 추가
+            img.classList.add('pic'); // 클래스 추가
+
+            li.appendChild(img); // <img>를 <li>에 추가
+            imageList.appendChild(li); // <li>를 <ul>에 추가
+        });
+
         console.time('test');
     
         var pics = document.getElementsByClassName("pic");
