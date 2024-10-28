@@ -146,7 +146,7 @@ a{
         transform: rotate(-90deg);
     }
 }
-@media screen and (min-width:380px )and (max-width: 450px){
+@media screen and (max-width: 450px){
     .container_2{
         position: relative;
         width: 100vh; /* 반응형 너비 */
