@@ -1,6 +1,8 @@
 body{
     margin:0;
-    background-color: #E9C9DF;
+    background: linear-gradient(to bottom,#8AAFFF,#3EAFFF,#5CD485,#FFE18B,#FFAFFF );
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 

@@ -1,12 +1,42 @@
 body{
     margin:0;
-    background-color: blue;
+    background-color: #2F68E2;
     font-family: "bookmania", serif;
     font-weight: 600;
     font-style: italic;
     text-align: center;
     overflow: hidden
 }
+
+
+.snowflake {
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute; /* 눈송이 감추기 */
+    top: -50px;
+    z-index: -3;
+    background-image: url("src/flower.png");
+    background-size: cover;
+    animation: fall 8s linear infinite, rotate 4s linear infinite; 
+}
+
+@keyframes fall {
+    from {
+    }
+    to {
+        transform: translateY(100vh); /* 화면 끝까지 이동 */
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    from {
+    }
+    to {
+        /* 360도 회전 */
+    }
+}
+
 
 .container{
     display: flex;
@@ -26,6 +56,7 @@ body{
 .background_img{    
     width:100%;
     height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .icon_1 {
@@ -128,6 +159,7 @@ a{
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
 
+
   .icon_8 {
     position: absolute;
     top: 80%; /* 아이콘 위치 조정 */
@@ -138,7 +170,18 @@ a{
     max-width: 200px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
-
+    .icon_1:hover,
+    .icon_2:hover,
+    .icon_3:hover,
+    .icon_4:hover,
+    .icon_5:hover,
+    .icon_6:hover,
+    .icon_7:hover,
+    .icon_8:hover{
+        filter: drop-shadow(0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.8)); 
+    
+    }
+/* 
 @media( orientation: portrait ){
     .container {
         -ms-transform: rotate(-90deg);
@@ -149,9 +192,9 @@ a{
 @media screen and (max-width: 450px){
     .container_2{
         position: relative;
-        width: 100vh; /* 반응형 너비 */
-        max-width: 1000px; /* 최대 너비 */
-        height: 100vw; /* 자동 높이 */
+        width: 100vh; 
+        max-width: 1000px; 
+        height: 100vw; 
         }
     .background_img{    
         width:auto;
@@ -160,7 +203,7 @@ a{
     #text_1 {
             font-size: 4.5vw;
             position: absolute;
-            top:20%; /* 아이콘 위치 조정 */
+            top:20%; 
             left: 4%;
             cursor: pointer;
             color:#1D2087;
@@ -169,10 +212,10 @@ a{
     #text_2 {
         font-size: 4.5vw;
         position: absolute;
-        top:20%; /* 아이콘 위치 조정 */
+        top:20%; 
         right:6%;
         cursor: pointer;
         color:#1D2087;
         line-height: 600%;
-}   
-}
+    }   
+} */

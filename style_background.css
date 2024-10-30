@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'grease';
-    src: url("src/font/grease__.ttf") format('truetype');
+    font-family: 'curely';
+    src: url("Curely-Free Typeface.otf") format('opentype');
 }
 
 body{
@@ -17,20 +17,9 @@ body{
     body{background-size:50%;}
 }
 
-div#header h1 {
-	background-color: transparent;
-	color: #1D2087;
-    cursor: default;
-    font-family: "rafaella-shadow", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 96px;
-    margin-bottom : 60px;
-}
-
-@media (max-width:800px){
-    div#header h1{font-size: 12vw; 
-        margin-bottom : 2.5vh;}
+#header {
+padding-top: 70px;
+ width: 80vw;
 }
 
 a {
@@ -40,9 +29,17 @@ a {
 p{
     line-height: 120%;
     margin: auto 0;
+    font-size: 4vw;
 }
 
-
+@media (min-width:1000px){
+  #header {
+width: 700px;
+}
+  p{
+    font-size: 20px;
+  }
+}
 
 .container{
     display: flex;

@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    background-color: #FFE7EE;
+    font-family: "bookmania", serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    overflow:hidden;
+    -ms-overflow-style: none;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    filter: drop-shadow(0.3vw 0.3vw 0.3vw rgba(0, 0, 0, 0.5));
+}
+
+.container_2{
+    position: relative;
+    width: 100%; /* 반응형 너비 */
+    max-width: 600px; /* 최대 너비 */
+    height: auto; /* 자동 높이 */
+}
+
+.background_img{    
+    width:100%;
+    height: auto;
+}
+
+#buddylist{
+    position: absolute;
+    margin: 0;
+    top: 30%; /* 아이콘 위치 조정 */
+    background-color: white;
+    width:94.2%;
+    height:55%;
+    overflow-y: auto; /* 수직 스크롤 활성화 */
+    cursor: ns-resize;
+}
+#buddyoverflow{
+    width: 100%;
+    height: auto;
+}
+
+
+#buddies{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}

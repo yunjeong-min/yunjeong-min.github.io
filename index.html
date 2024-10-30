@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
     <link rel="stylesheet" href="https://use.typekit.net/twn1gzz.css">
     <link rel="stylesheet" href="style.css"/>
-
-
     <title>Webby Nook</title>
 </head>
 
 <body>
+    
     <div class="container">
         <div class="container_2">
             <div id="text_1">
@@ -22,7 +21,7 @@
             <div id="text_2">
                 <a href="guestbook.html" target="_blank">Guestbook</a><br>
                 <a href="background.html">Wallpaper</a><br>
-                <a href="https://naver.com" target="_blank">Buddylist</a></div>
+                <a href="buddylist.html">Buddylist</a></div>
 
             <img class="background_img" src="src/main_web.png" alt="Background">
             <!-- 카탈로그 -->
@@ -46,7 +45,7 @@
                 <img class="icon_5" alt="Background" src="src/test_icon.png"  >
             </a>
             <!-- 버디리스트 -->
-            <a href="https://naver.com" target="_blank">
+            <a href="buddylist.html" >
                 <img class="icon_6" alt="Buddylist" src="src/test_icon.png"  >
             </a>
 
@@ -60,6 +59,41 @@
             </a>
         </div>
     </div>
+    <script>
+        const body = document.querySelector("body");
+        const MIN_DURATION = 10;
+  
+        function makeSnowflake() {
+          const snowflake = document.createElement("div");
+          const delay = Math.random() * 6 + 2;
+          const initialOpacity = Math.random();
+          const duration = Math.random() * 20 + MIN_DURATION;
+        
+        // 회전 속도 설정
+        const rotationDuration = Math.random() * 4 + 2; // 2초에서 6초 사이
+
+        const size = Math.random() * 7 + 1; 
+        snowflake.style.width = `${size}vw`;
+        snowflake.style.height = `${size}vw`;
+
+          snowflake.classList.add("snowflake");
+          snowflake.style.left = `${Math.random() * 100}vw`;
+          snowflake.style.animationDelay = `${delay}s`;
+          snowflake.style.opacity = initialOpacity;
+          snowflake.style.animation = `fall ${duration}s linear infinite, rotate ${rotationDuration}s linear infinite`;
+
+          body.appendChild(snowflake);
+  
+          setTimeout(() => {
+            body.removeChild(snowflake);
+            makeSnowflake();
+          }, (duration + delay) * 1000);
+        }
+  
+        for (let index = 0; index < 50; index++) {
+          setTimeout(makeSnowflake, 500 * index);
+        }
+      </script>
 </body>
    
         
