@@ -17,3 +17,15 @@ body{
     padding: 0px;
     margin: 0;
 }
+
+#wrap2 {
+    width:100%;
+}
+
+@media (max-width:1000px){
+    #wrap2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }

@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: #FFE7EE;
+    background-color: #A9B2FF;
     font-family: "bookmania", serif;
     font-weight: 600;
     font-style: italic;
@@ -18,14 +18,14 @@ body{
     align-items: center;
     width: 100vw;
     height: 100vh;
+    filter: drop-shadow(0.3vw 0.3vw 0.3vw rgba(0, 0, 0, 0.5));
 }
 
 .container_2{
     position: relative;
     width: 100%; /* 반응형 너비 */
-    max-width: 600px; /* 최대 너비 */
+    max-width: 1400px;/* 최대 너비 */
     height: auto; /* 자동 높이 */
-    filter: drop-shadow(0.3vw 0.3vw 0.3vw rgba(0, 0, 0, 0.5));
 }
 
 .background_img{    
@@ -36,10 +36,11 @@ body{
 #buddylist{
     position: absolute;
     margin: 0;
-    top: 30%; /* 아이콘 위치 조정 */
+    top: 28.5%; /* 아이콘 위치 조정 */
+    left: 3.2%;
     background-color: white;
-    width:94.2%;
-    height:55%;
+    width:90.8%;
+    height: 63.1%;
     overflow-y: auto; /* 수직 스크롤 활성화 */
     cursor: ns-resize;
 }
@@ -54,23 +55,4 @@ body{
     width: 100%;
     height: auto;
     margin: 0;
-}
-.square {
-    z-index: -3;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    animation: rotate linear infinite;
-    background-image: url(src/buddylist/buddy_swirl.png);
-    background-size: cover;
-    opacity: 50%;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
 }
