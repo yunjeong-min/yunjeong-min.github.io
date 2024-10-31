@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="https://use.typekit.net/twn1gzz.css">
+    <link rel="stylesheet" href="style_buddy.css"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <title>Buddylist</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="container_2" >
+            <div id="buddylist">
+                <div id="buddyoverflow">
+                <a href="https://www.instagram.com/yesyes_yong" target="_blank"><img id="buddies" src="src/buddylist/buddy_1.png"></a>
+                <a href="https://www.instagram.com/junkiepocket" target="_blank"><img id="buddies" src="src/buddylist/buddy_2.png"></a>
+                <a href="https://www.instagram.com/applecrumblelemonpie/" target="_blank"><img id="buddies" src="src/buddylist/buddy_3.png"></a>
+                <a href="https://www.instagram.com/hansum.maker/" target="_blank"><img id="buddies" src="src/buddylist/buddy_4.png"></a>
+                <a href="https://www.instagram.com/727cake/" target="_blank"><img id="buddies" src="src/buddylist/buddy_5.png"></a>
+                <a href="https://www.instagram.com/sugarsugaryune" target="_blank"><img id="buddies" src="src/buddylist/buddy_6.png"></a>
+                <a href="https://www.instagram.com/turnr_ght/" target="_blank"><img id="buddies" src="src/buddylist/buddy_7.png"></a>
+                </div>
+            </div>
+            <img class="background_img" src="src/buddy_window.png" alt="Background">
+        </div>    
+    </div>
+
+    <!-- <script>
+   const container = document.getElementById('container');
+const numberOfSquares = 30; // 생성할 사각형 개수
+const squares = [];
+
+// 최소 및 최대 사각형 크기 설정
+const minSize = 30; // 최소 크기
+const maxSize = 100; // 최대 크기
+
+function createSquare() {
+    const square = document.createElement('div');
+    square.classList.add('square');
+
+    // 랜덤한 크기 설정
+    const size = Math.floor(Math.random() * (maxSize - minSize + 1)) + minSize; // 최소 및 최대 사이의 랜덤 크기
+
+    let x, y, overlap;
+
+    do {
+        overlap = false;
+        // 랜덤한 위치 설정
+        x = Math.random() * (window.innerWidth - size);
+        y = Math.random() * (window.innerHeight - size);
+
+        // 겹치는지 검사
+        for (const s of squares) {
+            if (
+                x < s.x + s.size &&
+                x + size > s.x &&
+                y < s.y + s.size &&
+                y + size > s.y
+            ) {
+                overlap = true;
+                break;
+            }
+        }
+    } while (overlap); // 겹치지 않을 때까지 반복
+
+    // 사각형의 위치 설정
+    square.style.left = `${x}px`;
+    square.style.top = `${y}px`;
+
+    // 사각형 크기 설정
+    square.style.width = `${size}px`;
+    square.style.height = `${size}px`;
+
+    // 랜덤한 회전 속도 설정
+    const rotationSpeed = Math.random() * 5 + 1; // 1도에서 5도 사이
+    square.style.animationDuration = `${rotationSpeed}s`;
+
+    squares.push({ x, y, size }); // 위치와 크기를 저장
+    container.appendChild(square);
+}
+
+// 화면을 가득 채우기 위한 사각형 생성
+for (let i = 0; i < numberOfSquares; i++) {
+    createSquare();
+}
+
+// 리사이즈 시 사각형 재배치
+window.addEventListener('resize', () => {
+    // 기존 사각형 제거
+    const existingSquares = document.querySelectorAll('.square');
+    existingSquares.forEach(sq => sq.remove());
+
+    // 새로운 사각형 생성
+    squares.length = 0; // 배열 초기화
+    for (let i = 0; i < numberOfSquares; i++) {
+        createSquare();
+    }
+});
+     </script> -->
+</body>
+   
+        
+</html>
