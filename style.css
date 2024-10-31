@@ -58,14 +58,29 @@ body{
     height: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.background_img_m{    
+    width:100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 .icon_1 {
     position: absolute;
     top: 11%; /* 아이콘 위치 조정 */
-    left: 7%;
+    left: 6%;
     cursor: pointer;
-    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
-    max-width: 100px; /* 최대 너비 설정 */
+    width: 12%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 120px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+.icon_1_m {
+    position: absolute;
+    top: 16%; /* 아이콘 위치 조정 */
+    left: 10%;
+    cursor: pointer;
+    width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 150px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
 
@@ -79,44 +94,97 @@ body{
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
 
+.icon_2_m {
+    position: absolute;
+    top: 16%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    width: 13%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 130px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
 
 .icon_3 {
     position: absolute;
-    top: 67%; /* 아이콘 위치 조정 */
-    left: 7%;
+    top: 66%; /* 아이콘 위치 조정 */
+    left: 6%;
     cursor: pointer;
-    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
-    max-width: 100px; /* 최대 너비 설정 */
+    width: 12%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 120px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+
+.icon_3_m {
+    position: absolute;
+    top: 16%; /* 아이콘 위치 조정 */
+    right: 10%;
+    cursor: pointer;
+    width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 150px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
 
 .icon_4 {
     position: absolute;
     top: 11%; /* 아이콘 위치 조정 */
-    right: 7%;
+    right: 4.5%;
     cursor: pointer;
-    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
-    max-width: 100px; /* 최대 너비 설정 */
+    width: 14%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 140px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
     transform: translate(0,0%);
 }
+
+.icon_4_m {
+    position: absolute;
+    top: 89%; /* 아이콘 위치 조정 */
+    left: 9%;
+    cursor: pointer;
+    width: 18%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 180px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+    transform: translate(0,0%);
+}
+
 .icon_5 {
     position: absolute;
-    top: 38%; /* 아이콘 위치 조정 */
-    right: 7%;
+    top: 39%; /* 아이콘 위치 조정 */
+    right: 6%;
     cursor: pointer;
-    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
-    max-width: 100px; /* 최대 너비 설정 */
+    width: 12%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 120px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+.icon_5_m {
+    position: absolute;
+    top: 89%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 150px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
 
 .icon_6 {
     position: absolute;
     top: 67%; /* 아이콘 위치 조정 */
-    right: 7%;
+    right: 6%;
     cursor: pointer;
-    width: 10%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
-    max-width: 100px; /* 최대 너비 설정 */
+    width: 12%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 120px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+
+.icon_6_m {
+    position: absolute;
+    top: 89%; /* 아이콘 위치 조정 */
+    right: 9%;
+    cursor: pointer;
+    width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 150px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
 
@@ -130,15 +198,78 @@ body{
     line-height: 700%;
 }
 
+
 #text_2 {
     font-size: 2.2vw;
     position: absolute;
     top:19%; /* 아이콘 위치 조정 */
-    right: 6%;
+    right: 6.7%;
     cursor: pointer;
     color:#1D2087;
     line-height: 700%;
 }
+
+#text_1_m {
+    font-size: 4vw;
+    position: absolute;
+    top:17.5%; /* 아이콘 위치 조정 */
+    left: 10%;
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+
+#text_2_m {
+    font-size: 4vw;
+    position: absolute;
+    top:17.5%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+
+#text_3_m {
+    font-size: 4vw;
+    position: absolute;
+    top:17.5%; /* 아이콘 위치 조정 */
+    right: 10%;
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+#text_4_m {
+    font-size: 4vw;
+    position: absolute;
+    top:90%; /* 아이콘 위치 조정 */
+    left: 7%;
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+
+#text_5_m {
+    font-size: 4vw;
+    position: absolute;
+    top:90%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+
+#text_6_m {
+    font-size: 4vw;
+    position: absolute;
+    top:90%; /* 아이콘 위치 조정 */
+    right: 8%;
+    cursor: pointer;
+    color:#1D2087;
+    line-height: 700%;
+}
+
 a{
     color:#1D2087;
 }
@@ -158,7 +289,16 @@ a{
     max-width: 200px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
-
+.icon_7_m {
+    position: absolute;
+    top: 65.5%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    width: 23%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 200px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
 
   .icon_8 {
     position: absolute;
@@ -168,6 +308,16 @@ a{
     cursor: pointer;
     width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
     max-width: 200px; /* 최대 너비 설정 */
+    height: auto; /* 비율에 따라 높이 자동 조정 */
+}
+.icon_8_m {
+    position: absolute;
+    top: 77%; /* 아이콘 위치 조정 */
+    left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    width: 28%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
+    max-width: 280px; /* 최대 너비 설정 */
     height: auto; /* 비율에 따라 높이 자동 조정 */
 }
     .icon_1:hover,
@@ -181,41 +331,51 @@ a{
         filter: drop-shadow(0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.8)); 
     
     }
-/* 
-@media( orientation: portrait ){
-    .container {
-        -ms-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
+
+    .icon_1_m:active,
+    .icon_2_m:active,
+    .icon_3_m:active,
+    .icon_4_m:active,
+    .icon_5_m:active,
+    .icon_6_m:active,
+    .icon_7_m:active,
+    .icon_8_m:active{
+        filter: drop-shadow(0.2vw 0.2vw 0.2vw rgba(0, 0, 0, 0.8)); 
+    
     }
-}
-@media screen and (max-width: 450px){
-    .container_2{
-        position: relative;
-        width: 100vh; 
-        max-width: 1000px; 
-        height: 100vw; 
+    @media (max-width:800px){
+        #text_1,
+        #text_2,
+        .icon_1,
+        .icon_2,
+        .icon_3,
+        .icon_4,
+        .icon_5,
+        .icon_6,
+        .icon_7,
+        .icon_8,
+        .background_img
+        {
+         display: none;
         }
-    .background_img{    
-        width:auto;
-        height:100vw;
+     }
+     @media (min-width:800px){
+        #text_1_m,
+        #text_2_m,
+        #text_3_m,
+        #text_4_m,
+        #text_5_m,
+        #text_6_m,
+        .icon_1_m,
+        .icon_2_m,
+        .icon_3_m,
+        .icon_4_m,
+        .icon_5_m,
+        .icon_6_m,
+        .icon_7_m,
+        .icon_8_m,
+        .background_img_m{
+        display: none;
         }
-    #text_1 {
-            font-size: 4.5vw;
-            position: absolute;
-            top:20%; 
-            left: 4%;
-            cursor: pointer;
-            color:#1D2087;
-            line-height: 600%;
-    }    
-    #text_2 {
-        font-size: 4.5vw;
-        position: absolute;
-        top:20%; 
-        right:6%;
-        cursor: pointer;
-        color:#1D2087;
-        line-height: 600%;
-    }   
-} */
+        
+     }

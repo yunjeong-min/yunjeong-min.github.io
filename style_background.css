@@ -55,9 +55,27 @@ width: 700px;
     overflow:hidden;
 }
 
+
+#monitor{
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  filter: drop-shadow(0.5vw 0.5vw 0.5vw #ffffff); 
+}
+@media (min-width:1000px){
+  #monitor{
+    width: 700px;
+  }
+}
+
+#bottom {
+  position: absolute;
+  bottom: 10px;
+}
+
 .gallery{margin:40px; margin-bottom: 0px;box-sizing:border-box; }
 .gallery:after{content:"";display:block;clear:both;visibility: hidden;}
-.gallery li{width:50%;float:left;box-sizing:border-box;padding:0 20px;margin:0 0 50px 0;}
+.gallery li{width:100%;float:left;box-sizing:border-box;padding:0 20px;margin:0 0 50px 0;}
 .gallery li img{width:100%;height:auto; cursor: default;}
 
 
