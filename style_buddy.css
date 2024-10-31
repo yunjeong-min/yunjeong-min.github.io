@@ -74,3 +74,9 @@ body{
         transform: rotate(360deg);
     }
 }
+
+@media (max-width:800px){
+  .square{
+    display: none;
+    }
+ }
