@@ -5,7 +5,7 @@ body{
     font-weight: 600;
     font-style: italic;
     text-align: center;
-    overflow: hidden
+
 }
 
 
@@ -139,7 +139,7 @@ body{
 
 .icon_4_m {
     position: absolute;
-    top: 89%; /* 아이콘 위치 조정 */
+    top: 87%; /* 아이콘 위치 조정 */
     left: 9%;
     cursor: pointer;
     width: 18%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
@@ -159,7 +159,7 @@ body{
 }
 .icon_5_m {
     position: absolute;
-    top: 89%; /* 아이콘 위치 조정 */
+    top: 87.5%; /* 아이콘 위치 조정 */
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
@@ -180,7 +180,7 @@ body{
 
 .icon_6_m {
     position: absolute;
-    top: 89%; /* 아이콘 위치 조정 */
+    top: 87.3%; /* 아이콘 위치 조정 */
     right: 9%;
     cursor: pointer;
     width: 15%; /* 아이콘의 너비를 뷰포트의 10%로 설정 */
@@ -242,7 +242,7 @@ body{
 #text_4_m {
     font-size: 4vw;
     position: absolute;
-    top:90%; /* 아이콘 위치 조정 */
+    top:89%; /* 아이콘 위치 조정 */
     left: 7%;
     cursor: pointer;
     color:#1D2087;
@@ -252,7 +252,7 @@ body{
 #text_5_m {
     font-size: 4vw;
     position: absolute;
-    top:90%; /* 아이콘 위치 조정 */
+    top:89%; /* 아이콘 위치 조정 */
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
@@ -263,7 +263,7 @@ body{
 #text_6_m {
     font-size: 4vw;
     position: absolute;
-    top:90%; /* 아이콘 위치 조정 */
+    top:89%; /* 아이콘 위치 조정 */
     right: 8%;
     cursor: pointer;
     color:#1D2087;
@@ -291,7 +291,7 @@ a{
 }
 .icon_7_m {
     position: absolute;
-    top: 65.5%; /* 아이콘 위치 조정 */
+    top: 64.7%; /* 아이콘 위치 조정 */
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
