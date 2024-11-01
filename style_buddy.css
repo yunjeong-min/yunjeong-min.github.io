@@ -55,6 +55,37 @@ body{
     height: auto;
     margin: 0;
 }
+
+#close_button{
+    position: absolute;
+    margin: 0;
+    top: 87%;
+    left: 3%; /* 아이콘 위치 조정 */
+    width:9vw;
+    height:9vw;
+}
+
+   #close_button2{
+    position: absolute;
+    margin: 0;
+    top: 1%;
+    right: 1%; /* 아이콘 위치 조정 */
+    width:5vw;
+    height:5vw;
+}
+@media (min-width:800px){
+    #close_button{
+        width:50px;
+        height: 50px;
+    }
+
+    #close_button2{
+     width:25px;
+     height: 25px;
+ }
+ }
+
+
 .square {
     z-index: -3;
     position: absolute;
