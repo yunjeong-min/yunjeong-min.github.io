@@ -36,10 +36,10 @@ body{
 #buddylist{
     position: absolute;
     margin: 0;
-    top: 30%; /* 아이콘 위치 조정 */
-    background-color: white;
+    top: 35.4%; /* 아이콘 위치 조정 */
+    background-color: #EFBCCB;
     width:94.2%;
-    height:55%;
+    height:49.7%;
     overflow-y: auto; /* 수직 스크롤 활성화 */
     cursor: ns-resize;
 }
