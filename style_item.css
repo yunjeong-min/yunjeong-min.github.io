@@ -94,3 +94,28 @@ body{
     display: none;
    }
 }
+
+#close_button{
+    position: absolute;
+    margin: 0;
+    top:2%;
+    right: 2%; /* 아이콘 위치 조정 */
+    width:3vw;
+    height:3vw;
+}
+
+@media (max-width:800px){
+    #close_button{
+        top:1.5%;
+        right: 2.7%; 
+        width:5vw;
+        height:5vw;
+    }
+}
+
+@media (min-width:1400px){
+    #close_button{
+        width:40px;
+        height:40px;
+    }
+}
