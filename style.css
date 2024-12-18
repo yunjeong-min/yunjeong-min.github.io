@@ -18,6 +18,7 @@ body{
     background-image: url("src/flower.png");
     background-size: cover;
     animation: fall 8s linear infinite, rotate 4s linear infinite; 
+    transform: rotate(var(--random-rotate, 0deg));
 }
 
 @keyframes fall {
