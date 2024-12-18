@@ -11,12 +11,12 @@ body{
 
 .snowflake {
     max-width: 50px;
-    max-height: 55px;
+    max-height: 50px;
     position: absolute; /* 눈송이 감추기 */
     top: -50px;
     z-index: -3;
     background-image: url("src/flower.png");
-    background-size: contain;
+    background-size: cover;
     animation: fall 8s linear infinite, rotate 4s linear infinite; 
 }
 
