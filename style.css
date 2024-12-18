@@ -11,7 +11,7 @@ body{
 
 .snowflake {
     max-width: 50px;
-    max-height: 50px;
+    max-height: 55px;
     position: absolute; /* 눈송이 감추기 */
     top: -50px;
     z-index: -3;
@@ -194,7 +194,7 @@ body{
     top:19%; /* 아이콘 위치 조정 */
     left: 5%;
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
@@ -205,7 +205,7 @@ body{
     top:19%; /* 아이콘 위치 조정 */
     right: 6.7%;
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
@@ -215,7 +215,7 @@ body{
     top:17.5%; /* 아이콘 위치 조정 */
     left: 10%;
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
@@ -226,7 +226,7 @@ body{
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
@@ -236,7 +236,7 @@ body{
     top:17.5%; /* 아이콘 위치 조정 */
     right: 10%;
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 #text_4_m {
@@ -245,7 +245,7 @@ body{
     top:89%; /* 아이콘 위치 조정 */
     left: 7%;
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
@@ -256,7 +256,7 @@ body{
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
@@ -266,12 +266,12 @@ body{
     top:89%; /* 아이콘 위치 조정 */
     right: 8%;
     cursor: pointer;
-    color:#1D2087;
+    color:#C01A20;
     line-height: 700%;
 }
 
 a{
-    color:#1D2087;
+    color:#C01A20;
 }
 @media screen and (min-width: 1000px) {
     #text_1, #text_2{
