@@ -16,7 +16,7 @@ body{
     top: -50px;
     z-index: -3;
     background-image: url("src/flower.png");
-    background-size: cover;
+    background-size: contain;
     animation: fall 8s linear infinite, rotate 4s linear infinite; 
 }
 
