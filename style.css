@@ -1,6 +1,6 @@
 body{
     margin:0;
-    background-color: #228363;
+    background-color: #3984C5;
     font-family: "bookmania", serif;
     font-weight: 600;
     font-style: italic;
@@ -195,7 +195,7 @@ body{
     top:19%; /* 아이콘 위치 조정 */
     left: 5%;
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
@@ -206,7 +206,7 @@ body{
     top:19%; /* 아이콘 위치 조정 */
     right: 6.7%;
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
@@ -216,7 +216,7 @@ body{
     top:17.5%; /* 아이콘 위치 조정 */
     left: 10%;
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
@@ -227,7 +227,7 @@ body{
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
@@ -237,7 +237,7 @@ body{
     top:17.5%; /* 아이콘 위치 조정 */
     right: 10%;
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 #text_4_m {
@@ -246,7 +246,7 @@ body{
     top:89%; /* 아이콘 위치 조정 */
     left: 7%;
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
@@ -257,7 +257,7 @@ body{
     left: 50%;
     transform: translate(-50%,0);
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
@@ -267,12 +267,12 @@ body{
     top:89%; /* 아이콘 위치 조정 */
     right: 8%;
     cursor: pointer;
-    color:#C01A20;
+    color:#1D2087;
     line-height: 700%;
 }
 
 a{
-    color:#C01A20;
+    color:#1D2087;
 }
 @media screen and (min-width: 1000px) {
     #text_1, #text_2{
